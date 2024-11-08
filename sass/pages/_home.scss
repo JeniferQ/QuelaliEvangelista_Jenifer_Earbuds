@@ -1,3 +1,8 @@
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 @use '../abstracts/variables' as v;
 
 #model {
@@ -56,7 +61,11 @@
     }
 }
 
+<<<<<<< Updated upstream
 @media (min-width: 768px) {
+=======
+@media (min-width: 1200px) {
+>>>>>>> Stashed changes
     #model {
         display: block;
     }
@@ -64,4 +73,9 @@
     #mobile-view {
         display: none;
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
