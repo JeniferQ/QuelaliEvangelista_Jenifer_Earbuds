@@ -1,0 +1,26 @@
+@use '../abstracts/variables' as v;
+
+body {
+    color: v.$white;
+}
+
+.Hotspot {
+    color: inherit;
+    text-align: left;
+}
+
+h1, h2, h3 {
+    font-family: v.$heading-font-family;
+    font-weight: 700;
+    font-size: 18pt;
+}
+
+p {
+    font-family: v.$body-font-family;
+    font-weight: 400;
+    font-size: 12pt;
+}
+
+.hotspots p {
+    overflow-wrap: break-word;
+}
