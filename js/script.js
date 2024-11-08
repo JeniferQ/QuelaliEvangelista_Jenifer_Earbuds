@@ -1,6 +1,4 @@
 (() => {
-
-  const model = document.querySelector("#model"),
   hotspots = document.querySelectorAll(".Hotspot");
 
   const infoBoxes = [
@@ -12,38 +10,33 @@
 
   function loadInfo() {
     infoBoxes.forEach((box, index) => {
-      let selected = document.querySelector(`#hotspot-${index+1}`);
-      const title = document.createElement("h2");
-      const paragraph = document.createElement("p");
-      const image = document.createElement("img");
+      let card = document.querySelector(`#mobile-card-${index+1}`);
+      let hotspot = document.querySelector(`#hotspot-${index+1}`);
 
-      title.classList.add('appear'), paragraph.classList.add('appear'), image.classList.add('appear');
+        card.innerHTML = `<div class="number">${index+1}</div>
+        <h2>${infoBoxes[index].title}</h2>
+        <p>${infoBoxes[index].text}</p>
+        <img src="${infoBoxes[index].img}"></img>`
 
-      title.textContent = box.title;
-      paragraph.textContent = box.text;
-      image.src = box.img;
-
-      selected.append(title, paragraph, image);
+        hotspot.innerHTML = `<h2 class="appear">${infoBoxes[index].title}</h2>
+        <p class="appear">${infoBoxes[index].text}</p>
+        <img class="appear" src="${infoBoxes[index].img}"></img>`
     });
   }
 
   function showInfo() {
     let selected = document.querySelector(`#${this.slot}`);
-
-    let tl = gsap.timeline();
-    tl.to(selected, { duration: .3, autoAlpha: 1, scale: 1, transformOrigin: '0% 0%', ease: 'sine.inOut'})
-    .to(".appear", { delay: .3, duration: .3, autoAlpha: 1, ease: 'sine.inOut' });
+    
+    gsap.to(selected, { duration: .3, autoAlpha: 1, scale: 1, transformOrigin: '0% 0%', ease: 'sine.inOut'});
   }
 
   function hideInfo() {
     let selected = document.querySelector(`#${this.slot}`);
 
-    let tl = gsap.timeline();
-    tl.to(".appear", { duration: .3, autoAlpha: 0, ease: 'sine.inOut' })
-    .to(selected, { delay: .3, duration: .3, autoAlpha: 0, scale: 0, ease: 'sine.out' });
+    gsap.to(selected, { delay: .3, duration: .3, autoAlpha: 0, scale: 0, ease: 'sine.out' });
   }
 
-  model.addEventListener("load", loadInfo);
+  loadInfo();
 
   hotspots.forEach(hotspot => {
     hotspot.addEventListener("mouseenter", showInfo);
