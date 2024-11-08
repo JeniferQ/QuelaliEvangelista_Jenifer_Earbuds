@@ -5,7 +5,7 @@
     { title: "Noise Cancellation", text: "Premium rubber tips with a sealed fit that cancels all background noise.", img: "images/hotspot_img-01.svg" },
     { title: "Fast Charging Battery", text: "Long lasting battery that fully recharges in a single hour.", img: "images/hotspot_img-04.svg" },
     { title: "Flexible Handle", text: "Malleable and ergonomic handle designed for hours of comfortable use.", img: "images/hotspot_img-03.svg" },
-    { title: "Rotating Handle", text: "Handles with up to 180 degree rotation that adapt to all ear shapes.", img: "images/hotspot_img-02.svg" }
+    { title: "Rotating Handle", text: "Handles with up to 90 degree rotation that adapt to all ear shapes.", img: "images/hotspot_img-02.svg" }
   ];
 
   function loadInfo() {
