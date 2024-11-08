@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
-   <link href="css/main.css" rel="stylesheet"/>
-    <link href="css/grid.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
     <title>Comet Earbuds</title>
 </head>
 
@@ -39,9 +39,7 @@
 
             <model-viewer id="model" src="model/earbud.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="images/poster.webp" shadow-intensity="1.2" shadow-softness="0.5">
                 <button class="Hotspot" slot="hotspot-1" data-position="-0.47348424695275215m 0.43648608453519794m 0.17663437167955273m" data-normal="-0.20960088571778934m 0.8159851227262065m 0.5387353229516478m" data-visibility-attribute="visible">
-                    <div class="border">
-                        <div class="HotspotAnnotation" id="hotspot-1">
-                        </div>
+                    <div class="HotspotAnnotation" id="hotspot-1">
                     </div>
                 </button>
                 
@@ -59,18 +57,13 @@
                     <div class="HotspotAnnotation" id="hotspot-4">
                     </div>
                 </button>
-        
-                <div class="progress-bar hide" slot="progress-bar">
-                    <div class="update-bar">
-                    </div>
-                </div>
-        
+    
                 <button slot="ar-button" id="ar-button">
                     View in your space
                 </button>
         
                 <div id="ar-prompt">
-                    <img src="images/ar_hand_prompt.png">
+                    <img src="images/ar_hand_prompt.png" alt="Hand with phone">
                 </div>
             </model-viewer>
         </div>
