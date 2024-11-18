@@ -4,10 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    
     <link href="css/main.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
+    
     <title>Comet - Earbuds</title>
 </head>
 
@@ -40,7 +44,7 @@
     </header>
 
     <main>
-        <div class="full-width-grid-con home" id="hero">
+        <section class="full-width-grid-con" id="hero">
             <div class="grid-con">
                 <div class="col-span-full m-col-start-2 m-col-end-7 side-border">
                     <h2 class="title">Experience audio beyond this world</h2>
@@ -54,9 +58,35 @@
             </div>
 
             <div class="blur"></div>
-        </div>
+        </section>
 
+        <section class="full-width-grid-con canvas">
+            <div class="grid-con">
+                <p class="col-span-full">Designed to deliver an audio experience unlike any other, our earbuds combine next-level noise cancellation and immersive spatial audio that will unlock an universe of possibilities. Dive into the future of sound technology today with Comet.</p>
+            </div>
+        </section>
 
+        <section class="full-width-grid-con colour-viewer">
+            <div class="grid-con">
+                <h2 class="col-span-full title">Explore our colours</h2>
+
+                <div class="col-span-full m-col-start-2 m-col-end-6 colour-card">
+                    <div class="img-con">
+                        <img src="images/bud_white.png">
+                    </div>
+                    
+                    <div class="card-txt">
+                        <img src="images/halved.svg">
+                        <h3>Moonlight</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrows">
+                <button class="left"><img src="images/arrow_blue.svg"></button>
+                <button class="right"><img src="images/arrow_blue.svg"></button>
+            </div>
+        </section>
 
     <div class="full-width-grid-con" id="mobile-view">
         <h2 class="hidden">Model Picture View</h2>
@@ -117,6 +147,8 @@
             </model-viewer>
         </div>
     </div>
+
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="js/script.js"></script>
