@@ -55,6 +55,10 @@
     }
 }
 
+#mobile-view {
+    display: none;
+}
+
 @media (min-width: 1200px) {
     #model {
         display: block;
