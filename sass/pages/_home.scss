@@ -1,5 +1,17 @@
 @use '../abstracts/variables' as v;
 
+.canvas {
+    p {
+        text-align: left;
+    }
+    @media (min-width: 768px) {
+       p {
+        text-align: center;
+        padding: 0 30px;
+       }
+    }
+}
+
 #model {
     display: none;
 }
