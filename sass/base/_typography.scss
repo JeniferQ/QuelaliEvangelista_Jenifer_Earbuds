@@ -4,6 +4,12 @@ body {
     color: v.$white;
 }
 
+.title {
+    color: v.$blue;
+    text-shadow: 0 0 5px #4400ff90, 0 0 8px v.$blue;
+    text-transform: uppercase;
+}
+
 .Hotspot {
     color: inherit;
     text-align: left;
@@ -24,5 +30,11 @@ h1, h2, h3 {
 p, a {
     font-family: v.$body-font-family;
     font-weight: 400;
-    font-size: 22pt;
+    font-size: 14pt;
+    font-weight: 200;
+}
+
+.canvas p {
+    font-size: 14pt;
+    line-height: 18pt;
 }
