@@ -2,10 +2,10 @@
   hotspots = document.querySelectorAll(".Hotspot");
 
   const infoBoxes = [
-    { title: "Noise Cancellation", text: "Premium rubber tips with a sealed fit that cancels all background noise.", img: "images/poster.png" },
-    { title: "Fast-Charge Battery", text: "Long lasting battery that fully recharges in a single hour.", img: "images/poster.png" },
-    { title: "Flexible Handle", text: "Malleable and ergonomic handle designed for hours of comfortable use.", img: "images/poster.png" },
-    { title: "Rotating Handle", text: "Handles with up to 90 degree rotation that adapt to all ear shapes.", img: "images/poster.png" }
+    { title: "Noise Cancellation", text: "Premium rubber tips with a sealed fit that cancels all background noise.", img: "images/hotspot_img-01.svg" },
+    { title: "Fast Charging Battery", text: "Long lasting battery that fully recharges in a single hour.", img: "images/hotspot_img-04.svg" },
+    { title: "Flexible Handle", text: "Malleable and ergonomic handle designed for hours of comfortable use.", img: "images/hotspot_img-03.svg" },
+    { title: "Rotating Handle", text: "Handles with up to 180 degree rotation that adapt to all ear shapes.", img: "images/hotspot_img-02.svg" }
   ];
 
   function loadInfo() {
@@ -13,17 +13,12 @@
       let card = document.querySelector(`#mobile-card-${index+1}`);
       let hotspot = document.querySelector(`#hotspot-${index+1}`);
 
-        card.innerHTML = `<div class="shape">
-        <div class="hexagon"><p>${index+1}</p></div>
-        <div class="side-line"></div></div>
-
-        <div class="info">
-        <h3 class="title">${infoBoxes[index].title}</h3>
+        card.innerHTML = `<div class="number">${index+1}</div>
+        <h2>${infoBoxes[index].title}</h2>
         <p>${infoBoxes[index].text}</p>
-        <img src="${infoBoxes[index].img}"></img>
-        </div>`
+        <img src="${infoBoxes[index].img}"></img>`
 
-        hotspot.innerHTML = `<h2 class="appear title">${infoBoxes[index].title}</h2>
+        hotspot.innerHTML = `<h2 class="appear">${infoBoxes[index].title}</h2>
         <p class="appear">${infoBoxes[index].text}</p>
         <img class="appear" src="${infoBoxes[index].img}"></img>`
     });
