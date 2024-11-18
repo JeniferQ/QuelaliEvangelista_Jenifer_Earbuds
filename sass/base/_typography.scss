@@ -15,16 +15,22 @@ body {
     text-align: left;
 }
 
-.title {
-    color: v.$blue;
-    text-shadow: 0 0 5px #4400ff90, 0 0 8px v.$blue;
-    text-transform: uppercase;
-}
-
 h1, h2, h3 {
     font-family: v.$heading-font-family;
-    font-weight: bolder;
-    font-size: 30pt;
+}
+
+#hero h2 {
+    font-size: 28pt;
+}
+
+h2 {
+    font-size: 24pt;
+    font-weight: 200;
+}
+
+h3 {
+    font-size: 18pt;
+    font-weight: 200;
 }
 
 p, a {
