@@ -1,0 +1,69 @@
+@use '../abstracts' as a;
+
+#hero {
+    background-color: a.$black;
+    position: relative;
+    max-height: 800px;
+
+    @media (min-width: 768px) {
+        min-height: 500px;
+    }
+}
+
+.side-border {
+    margin: 80px 0 0 10px;
+    padding-left: 30px;
+    border-left: 3px solid a.$blue;
+    height: fit-content;
+}
+
+.float {
+    width: 100%;
+    max-width: 500px;
+    justify-self: center;
+
+    @media (min-width: 768px) {
+        margin-left: 50px;
+    }
+}
+
+.hero-bg {
+    justify-self: center;
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+
+    img {
+        width: 100%;
+    }
+}
+
+.blur {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+// .hero-img {
+//     width: 80%;
+//     justify-self: center;
+//     padding-bottom: 30px;
+
+//     img {
+//         width: 100%;
+//     }
+
+//     @media (min-width: 768px) {
+//         grid-row: 1/4;
+//         justify-self: end;
+//         align-self: center;
+//         padding-bottom: 0;
+//     }
+// }
+
+.case#hero {
+    background-color: rgb(199, 255, 255);
+}

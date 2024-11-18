@@ -1,5 +1,17 @@
 @use '../abstracts/variables' as v;
 
+.canvas {
+    p {
+        text-align: left;
+    }
+    @media (min-width: 768px) {
+       p {
+        text-align: center;
+        padding: 0 30px;
+       }
+    }
+}
+
 #model {
     display: none;
 }
@@ -40,7 +52,6 @@
     }
 
     h2 {
-        margin-top: 25px;
         margin-bottom: 40px;
     }
 
@@ -56,7 +67,11 @@
     }
 }
 
-@media (min-width: 768px) {
+#mobile-view {
+    display: none;
+}
+
+@media (min-width: 1200px) {
     #model {
         display: block;
     }
