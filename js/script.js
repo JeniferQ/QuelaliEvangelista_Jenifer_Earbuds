@@ -13,12 +13,17 @@
       let card = document.querySelector(`#mobile-card-${index+1}`);
       let hotspot = document.querySelector(`#hotspot-${index+1}`);
 
-        card.innerHTML = `<div class="number">${index+1}</div>
-        <h2>${infoBoxes[index].title}</h2>
-        <p>${infoBoxes[index].text}</p>
-        <img src="${infoBoxes[index].img}"></img>`
+        card.innerHTML = `<div class="shape">
+        <div class="hexagon"><p>${index+1}</p></div>
+        <div class="side-line"></div></div>
 
-        hotspot.innerHTML = `<h2 class="appear">${infoBoxes[index].title}</h2>
+        <div class="info">
+        <h3 class="title">${infoBoxes[index].title}</h3>
+        <p>${infoBoxes[index].text}</p>
+        <img src="${infoBoxes[index].img}"></img>
+        </div>`
+
+        hotspot.innerHTML = `<h2 class="appear title">${infoBoxes[index].title}</h2>
         <p class="appear">${infoBoxes[index].text}</p>
         <img class="appear" src="${infoBoxes[index].img}"></img>`
     });
