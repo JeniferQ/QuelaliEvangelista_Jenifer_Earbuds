@@ -5,14 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
-    <title>Comet Earbuds</title>
+    <title>Comet - Earbuds</title>
 </head>
 
 <body>
-    <h1 class="hidden">Earbuds Visualizer</h1>
+    <header class="full-width-grid-con" id="header">
+        <h1 class="hidden">Comet Earbuds Website</h1>
+
+        <div class="grid-con">
+            <h2 class="hidden">Header</h2>
+
+            <div class="col-start-1 col-end-3" id="logo">
+                <a href="index.html"><img src="images/comet.svg" alt="Comet logo"></a>
+            </div>
+    
+            <div class="col-start-4 col-end-5 m-col-start-12 m-col-end-13" id="burger">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+
+            <nav class="col-span-full m-col-start-6 m-col-end-13" id="menu">
+                <h3 class="hidden">Header Navigation</h3>
+                <ul>
+                    <li><a href="#">Link1</a></li>
+                    <li><a href="#">Link2</a></li>
+                    <li><a href="#">Link3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="full-width-grid-con home" id="hero">
+            <div class="grid-con">
+                <div class="col-span-full m-col-start-2 m-col-end-7 side-border">
+                    <h2 class="title">Experience audio beyond this world</h2>
+                </div>
+
+                <img class="col-span-full m-col-start-7 m-col-end-13 float" src="images/buds_float.png" alt="A pair of Comet Earbuds">
+            </div>
+
+            <div class="col-span-full hero-bg">
+                <img src="images/sky.jpg" alt="A phone">
+            </div>
+
+            <div class="blur"></div>
+        </div>
+
+
 
     <div class="full-width-grid-con" id="mobile-view">
         <h2 class="hidden">Model Picture View</h2>
