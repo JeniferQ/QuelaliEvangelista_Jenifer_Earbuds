@@ -1,3 +1,8 @@
 // Import variables from the main variables partial
-@forward 'ar-model';
+
+@forward 'header';
+@forward 'hero';
 @forward 'body';
+@forward 'colour-card';
+@forward 'info-card';
+@forward 'ar-model';

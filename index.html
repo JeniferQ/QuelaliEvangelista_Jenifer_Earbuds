@@ -4,58 +4,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
-    <link href="css/main.css" rel="stylesheet"/>
-    <title>Comet Earbuds</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    
+    <title>Comet - Earbuds</title>
 </head>
 
 <body>
-    <h1>Welcome to the Comet website!</h1>
+    <header class="full-width-grid-con" id="header">
+        <h1 class="hidden">Comet Earbuds Website</h1>
 
-    <div class="full-width-grid-con" id="mobile-view">
-        <h2 class="hidden">Model Picture View</h2>
-        <img class="col-span-full" src="images/mobile-earbuds.png" alt="A set of Comet earbuds">
-    </div>
+        <div class="grid-con">
+            <h2 class="hidden">Header</h2>
 
-    <model-viewer class="full-width-grid-con" id="model" src="model/earbud.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="images/poster.webp" shadow-intensity="1.2" shadow-softness="0.5">
-        <h2 class="hidden">Interactive Model View</h2>
+            <div class="col-start-1 col-end-3" id="logo">
+                <a href="index.html"><img src="images/comet.svg" alt="Comet logo"></a>
+            </div>
+    
+            <div class="col-start-4 col-end-5 m-col-start-12 m-col-end-13" id="burger">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
 
-        <button class="Hotspot" slot="hotspot-1" data-position="-0.47348424695275215m 0.43648608453519794m 0.17663437167955273m" data-normal="-0.20960088571778934m 0.8159851227262065m 0.5387353229516478m" data-visibility-attribute="visible">
-            <div class="border">
-                <div class="HotspotAnnotation" id="hotspot-1">
+            <nav class="col-span-full m-col-start-6 m-col-end-13" id="menu">
+                <h3 class="hidden">Header Navigation</h3>
+                <ul>
+                    <li><a href="#">Link1</a></li>
+                    <li><a href="#">Link2</a></li>
+                    <li><a href="#">Link3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="full-width-grid-con" id="hero">
+            <div class="grid-con">
+                <div class="col-span-full m-col-start-2 m-col-end-7 side-border">
+                    <h2 class="title">Experience audio beyond this world</h2>
+                </div>
+
+                <img class="col-span-full m-col-start-7 m-col-end-13 float" src="images/buds_float.png" alt="A pair of Comet Earbuds">
+            </div>
+
+            <div class="col-span-full hero-bg">
+                <img src="images/sky.jpg" alt="A phone">
+            </div>
+
+            <div class="blur"></div>
+        </section>
+
+        <section class="full-width-grid-con canvas">
+            <div class="grid-con">
+                <p class="col-span-full">Designed to deliver an audio experience unlike any other, our earbuds combine next-level noise cancellation and immersive spatial audio that will unlock an universe of possibilities. Dive into the future of sound technology today with Comet.</p>
+            </div>
+        </section>
+
+        <section class="full-width-grid-con colour-viewer">
+            <div class="grid-con">
+                <h2 class="col-span-full title">Explore our colours</h2>
+
+                <div class="col-span-full m-col-start-2 m-col-end-6 colour-card">
+                    <div class="img-con">
+                        <img src="images/bud_white.png">
+                    </div>
+                    
+                    <div class="card-txt">
+                        <img src="images/halved.svg">
+                        <h3>Moonlight</h3>
+                    </div>
                 </div>
             </div>
-        </button>
-        
-        <button class="Hotspot" slot="hotspot-2" data-position="-0.48569376296932376m 0.05586467767355835m -0.06020351079694662m" data-normal="0.005156152849381451m -0.9999326148544552m -0.01040095371232322m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation" id="hotspot-2">
-            </div>
-        </button>
-        
-        <button class="Hotspot" slot="hotspot-3" data-position="0.6761424859622599m 0.21560330916103204m 0.08967683653159214m" data-normal="-0.38047848157784203m 0.9240619251042571m -0.03668356074366943m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation" id="hotspot-3">
-            </div>
-        </button>
-        
-        <button class="Hotspot" slot="hotspot-4" data-position="-0.18491237214085965m 0.20014066668218383m 0.191676943391778m" data-normal="-0.22849713783351847m 0.9528841941052055m 0.1995013048237105m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation" id="hotspot-4">
-            </div>
-        </button>
 
-        <div class="progress-bar hide" slot="progress-bar">
-            <div class="update-bar">
+            <div class="arrows">
+                <button class="left"><img src="images/arrow_blue.svg"></button>
+                <button class="right"><img src="images/arrow_blue.svg"></button>
+            </div>
+        </section>
+
+        <div class="full-width-grid-con" id="mobile-view">
+            <h2 class="hidden">Model Picture View</h2>
+    
+            <div class="grid-con">
+                <div class="col-span-full side-border">
+                    <h2 class="title">What makes us great?</h2>
+                </div>
+    
+                <img class="col-span-full mobile-model" src="images/poster.png" alt="A single earbud">
+    
+                <div class="hotspot-mobile col-span-full" id="mobile-card-1">
+                </div>
+    
+                <div class="hotspot-mobile col-span-full" id="mobile-card-2">
+                </div>
+    
+                <div class="hotspot-mobile col-span-full" id="mobile-card-3">
+                </div>
+    
+                <div class="hotspot-mobile col-span-full" id="mobile-card-4">
+                </div>
             </div>
         </div>
 
-        <button slot="ar-button" id="ar-button">
-            View in your space
-        </button>
+        <div class="full-width-grid-con" id="model-view">
+            <h2 class="hidden">Interactive Model View</h2>
 
-        <div id="ar-prompt">
-            <img src="images/ar_hand_prompt.png">
+            <div class="grid-con">
+                <div class="m-col-start-1 m-col-end-6 side-border">
+                    <h2 class="title">What makes us great?</h2>
+                </div>
+
+                <div class="col-span-full" id="model">
+                    <model-viewer src="model/earbud.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="aces" poster="images/poster.png" shadow-intensity="1.31" environment-image="model/autumn_field_puresky_4k.hdr" exposure="2" shadow-softness="0.66" camera-orbit="-72deg 76.4deg 2.504m" field-of-view="30deg">
+                        <button class="Hotspot" slot="hotspot-1" data-position="-0.4770669233853094m 0.43737234305258743m 0.1738981241118499m" data-normal="-0.20960089211134275m 0.8159851237874208m 0.5387353188568174m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation" id="hotspot-1">
+                            </div>
+                        </button>
+                        
+                        <button class="Hotspot" slot="hotspot-2" data-position="-0.48569376296932376m 0.05586467767355835m -0.06020351079694662m" data-normal="0.005156152849381451m -0.9999326148544552m -0.01040095371232322m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation" id="hotspot-2">
+                            </div>
+                        </button>
+                        
+                        <button class="Hotspot" slot="hotspot-3" data-position="0.6761424859622599m 0.21560330916103204m 0.08967683653159214m" data-normal="-0.38047848157784203m 0.9240619251042571m -0.03668356074366943m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation" id="hotspot-3">
+                            </div>
+                        </button>
+                        
+                        <button class="Hotspot" slot="hotspot-4" data-position="-0.18491237214085965m 0.20014066668218383m 0.191676943391778m" data-normal="-0.22849713783351847m 0.9528841941052055m 0.1995013048237105m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation" id="hotspot-4">
+                            </div>
+                        </button>
+        
+                        <div class="progress-bar hide" slot="progress-bar">
+                            <div class="update-bar">
+                            </div>
+                        </div>
+            
+                        <button slot="ar-button" id="ar-button">
+                            View in your space
+                        </button>
+                
+                        <div id="ar-prompt">
+                            <img src="images/ar_hand_prompt.png" alt="Hand with phone">
+                        </div>
+                    </model-viewer>
+                </div>
+
+                <p class="bg-txt">Interactive</p>
+            </div>
         </div>
-    </model-viewer>
+
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="js/script.js"></script>

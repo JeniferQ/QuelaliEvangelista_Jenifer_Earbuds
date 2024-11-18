@@ -1,0 +1,31 @@
+@use '../abstracts/variables' as v;
+
+.HotspotAnnotation{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    visibility: hidden;
+  
+    background: url(/images/pexels-kublizz-550505632-18002242.jpg);
+    border: 2px solid v.$blue;
+    box-shadow: 0 0 10px 2px #83b1f080;
+    border-radius: 10px;
+    display: block;
+    
+    max-width: 250px;
+    min-width: 200px;
+    padding: 20px;
+  
+    h2 {
+      margin: 10px 0;
+    }
+  
+    p {
+      margin-top: 20px;
+    }
+    
+    img {
+      width: 100%;
+    }
+  }

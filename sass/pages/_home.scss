@@ -1,0 +1,127 @@
+
+@use '../abstracts/variables' as v;
+
+.canvas {
+    p {
+        text-align: left;
+    }
+    @media (min-width: 768px) {
+       p {
+        text-align: center;
+        padding: 0 30px;
+       }
+    }
+}
+
+.colour-viewer {
+    margin-top: 40px;
+    position: relative;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+}
+
+.arrows {
+    position: absolute;
+    width: 100%;
+    bottom: 40%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+
+    button {
+        margin: 0 30px;
+        width: fit-content;
+        background-color: transparent;
+        border: none;
+
+        img {
+            width: 30px;
+            cursor: pointer;
+        }
+    }
+
+    .right {
+        transform: rotate(180deg);
+    }
+}
+
+#mobile-view {
+    .mobile-model {
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+
+.hotspot-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 80px;
+    max-width: 450px;
+    justify-self: center;
+
+    .shape {
+        width: 100px;
+        flex-shrink: 0;
+        position: relative;
+
+        .hexagon {
+            width: 100px;
+            height: 100px;
+            background: url(/images/hexagon.svg) center no-repeat;
+            text-align: center;
+            align-content: center;
+            color: v.$blue;
+        
+            p {
+                font-size: 28pt;
+                padding-top: 5px;
+            }
+        }
+
+        .side-line {
+            border-left: 3px dashed v.$blue;
+            width: 3px;
+            height: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    .info {
+        flex: 1;
+
+        h3 {
+            font-size: 24pt;
+            margin: 10px 0 30px 0;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        img {
+            background-color: gray;
+            width: 100%;
+        }
+    }
+}
+
+.hotspot-mobile:last-of-type {
+    .side-line {
+        border: none;
+    }
+}
+
+@media (min-width: 768px) {
+    #model {
+        display: block;
+    }
+
+    #mobile-view {
+        display: none;
+    }
+}

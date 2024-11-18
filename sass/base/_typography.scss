@@ -4,6 +4,12 @@ body {
     color: v.$white;
 }
 
+.title {
+    color: v.$blue;
+    text-shadow: 0 0 5px #4400ff90, 0 0 8px v.$blue;
+    text-transform: uppercase;
+}
+
 .Hotspot {
     color: inherit;
     text-align: left;
@@ -11,16 +17,28 @@ body {
 
 h1, h2, h3 {
     font-family: v.$heading-font-family;
-    font-weight: 700;
+}
+
+#hero h2 {
+    font-size: 28pt;
+}
+
+h2 {
+    font-size: 24pt;
+    font-weight: 200;
+}
+
+h3 {
     font-size: 18pt;
+    font-weight: 200;
 }
 
-p {
+p, a {
     font-family: v.$body-font-family;
-    font-weight: 400;
-    font-size: 12pt;
+    font-size: 14pt;
+    font-weight: 200;
 }
 
-.hotspots p {
-    overflow-wrap: break-word;
+.Hotspot h2 {
+    font-size: 24pt;
 }
