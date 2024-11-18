@@ -1,9 +1,9 @@
 @use '../abstracts/variables' as v;
 
 model-viewer {
-  width: 100vw;
-  height: 100vh;
-  background-color: v.$gray;
+  max-width: 1200px;
+  max-height: auto;
+  background-color: v.$black;
   margin: 0 auto;
 }
 
