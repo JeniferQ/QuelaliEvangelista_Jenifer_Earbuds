@@ -1,0 +1,95 @@
+@use '../abstracts/variables' as v;
+
+.xray-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    img {
+        width: 40px;
+    }
+
+    h2 {
+        margin-left: 20px;
+        text-align: center;
+    }
+
+}
+
+.border {
+    width: 80%;
+    outline: 3px dashed v.$blue;
+    border: 10px solid #001c5eb5;
+    padding: 0 30px;
+    border-radius: 20px;
+    justify-self: center;
+    position: relative;
+    background-image: linear-gradient(#5b9cf130 1px, transparent 1px), linear-gradient(to right, #5b9cf130 1px, transparent 1px);
+	background-size: 10px 10px;
+    margin-bottom: 40px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.xray-con {
+    display: none;
+    width: 550px;
+    height: 700px;
+    background: url(/images/buds_float.png) no-repeat;
+    margin: 0 auto;
+}
+
+.xray {
+    width: 275px;
+    height: 700px;
+    background: url(/images/buds_xray.png) no-repeat;
+    position: absolute;
+}
+
+.inputRange {
+    display: none;
+    height: 4px;
+    width: 550px;
+    margin: 20px auto 40px auto;
+    appearance: none;
+    border-radius: 10px;
+    background: v.$blue;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .border img {
+        display: none;
+    }
+
+    .xray-con, .inputRange {
+        display: block;
+    }
+}
+
+/* Thumb: for Chrome, Safari, Edge */
+
+.inputRange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 50%;
+    background: radial-gradient(circle, #3e6ed7 0%, v.$blue 100%);
+    box-shadow: none;
+}
+
+/* Thumb: for Firefox */
+
+.inputRange::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    background: radial-gradient(circle, #3e6ed7 0%, v.$blue 100%);
+    box-shadow: none;
+}
+

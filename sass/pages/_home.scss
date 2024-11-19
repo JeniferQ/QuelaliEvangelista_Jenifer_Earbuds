@@ -1,4 +1,3 @@
-
 @use '../abstracts/variables' as v;
 
 .canvas {
@@ -47,6 +46,10 @@
     .right {
         transform: rotate(180deg);
     }
+}
+
+#model {
+    display: none;
 }
 
 #mobile-view {
