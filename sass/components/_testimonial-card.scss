@@ -1,0 +1,26 @@
+@use '../abstracts/variables' as v;
+
+.testimonial-card {
+    border: 3px dotted v.$blue;
+    background-image: url(/images/pexels-kublizz-550505632-18002242.jpg);
+    border-radius: 30px;
+    padding: 30px;
+    margin: 0 30px;
+
+    .name {
+        margin-bottom: 10px;  
+    }
+
+    .rating {
+        height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .card-title {
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: 768px) {
+        margin: 0;
+    }
+}
