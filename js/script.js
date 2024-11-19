@@ -1,5 +1,5 @@
 (() => {
-  hotspots = document.querySelectorAll(".Hotspot");
+  const hotspots = document.querySelectorAll(".Hotspot");
 
   const infoBoxes = [
     { title: "Noise Cancellation", text: "Premium rubber tips with a sealed fit that cancels all background noise.", img: "images/hotspot_img-01.svg" },
@@ -50,3 +50,14 @@
 
 })();
 
+(() => {
+  const divisor = document.querySelector(".xray");
+  const slider = document.querySelector(".inputRange")
+
+function moveDivisor() {
+    console.log(slider.value);
+    divisor.style.width = `${slider.value}px`;
+}
+
+  slider.addEventListener("input", moveDivisor);
+})();
