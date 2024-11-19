@@ -39,6 +39,20 @@ p, a {
     font-weight: 200;
 }
 
+.canvas p {
+    font-size: 14pt;
+    line-height: 18pt;
+}
 .Hotspot h2 {
     font-size: 24pt;
+}
+
+.name {
+    font-family: v.$heading-font-family;
+    font-size: 22pt;
+}
+
+.card-title {
+    font-size: 20pt;
+    font-weight: 400;
 }
