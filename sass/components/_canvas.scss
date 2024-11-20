@@ -1,0 +1,13 @@
+.canvas-con {
+    margin: 30px auto;
+}
+
+.sequence {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+
+    @media (min-width: 768px) {
+        width: 80%;;
+    }
+}
