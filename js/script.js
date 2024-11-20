@@ -1,4 +1,36 @@
 (() => {
+  const canvas = document.querySelector(".sequence");
+  const context = canvas.getContext("2d");
+
+  canvas.width = 1200;
+  canvas.height = 1080;
+
+  const frameCount = 161;
+  const images = [];
+  const sequence = { frame: 0 };
+
+  for(let i = 0; i < frameCount; i++){
+      const img = new Image();
+      img.src =`images/sequence/website${(i + 1).toString().padStart(3, '0')}.webp`;
+      images.push(img);
+  }
+
+  gsap.to(sequence, {
+      frame: 159,
+      snap: "frame",
+      scrollTrigger: { trigger: ".sequence", pin: true, scrub: 2, start: "top top" }, onUpdate: render
+  });
+  
+  images[0].addEventListener("load", render);
+
+  function render(){
+      context.clearRect(0,0, canvas.width, canvas.height);
+      console.log(images[sequence.frame]);
+      context.drawImage(images[sequence.frame], 0, 0);
+  }
+})();
+
+(() => {
   const hotspots = document.querySelectorAll(".Hotspot");
 
   const infoBoxes = [
