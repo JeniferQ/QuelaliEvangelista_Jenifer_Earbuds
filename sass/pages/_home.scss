@@ -12,42 +12,6 @@
     }
 }
 
-.hotspot-mobile {
-    justify-self: center;
-    border: 2px solid v.$white;
-    border-radius: 10px;
-    margin: 10px 10px 30px 10px;
-    padding: 20px;
-    max-width: 450px;
-    overflow: hidden;
-
-    .number {
-        border: 2px solid v.$white;
-        margin: 20px;
-        padding: 5px;
-        outline: 2px solid v.$white;
-        outline-offset: 5px;
-        border-radius: 50%;
-        width: 25px;
-        height: 25px;
-        
-        font-size: 15pt;
-        font-weight: bolder;
-        font-family: Tahoma, Helvetica, sans-serif;
-        color: black;
-        text-align: center;
-        align-content: center;
-        background-color: v.$white;
-        float: left;
-    }
-
-    h2 {
-        text-align: center;
-        margin-bottom: 40px;
-        padding: 0 20px;
-    }
-}
-
 .colour-viewer {
     margin-top: 40px;
     position: relative;
