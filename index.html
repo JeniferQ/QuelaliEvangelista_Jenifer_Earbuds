@@ -61,8 +61,14 @@
         </section>
 
         <section class="full-width-grid-con canvas">
+            <h2 class="hidden">Earbuds animation</h2>
+
             <div class="grid-con">
-                <p class="col-span-full">Designed to deliver an audio experience unlike any other, our earbuds combine next-level noise cancellation and immersive spatial audio that will unlock an universe of possibilities. Dive into the future of sound technology today with Comet.</p>
+                <div class="col-span-full canvas-con">
+                    <canvas class="sequence"></canvas>
+
+                    <p>Designed to deliver an audio experience unlike any other, our earbuds combine next-level noise cancellation and immersive spatial audio that will unlock an universe of possibilities. Dive into the future of sound technology today with Comet.</p>
+                </div>
             </div>
         </section>
 
@@ -160,7 +166,6 @@
                 <p class="bg-txt">Interactive</p>
             </div>
         </div>
-    </model-viewer>
 
         <section class="full-width-grid-con xray-view">
             <div class="grid-con">
@@ -177,7 +182,7 @@
                         </div>
                     </div>
 
-                    <input class="inputRange" type="range" name="range" value="275" min="0" max="550" id="inputRange"/>
+                    <input class="inputRange" type="range" name="range" value="275" min="0" max="550" id="inputRange">
                 </div>
             </div>
         </section>
@@ -223,7 +228,7 @@
                         <input type="text" placeholder="Your e-mail">
     
                         <label>Message:</label>
-                        <textarea type="text" placeholder="Your message"></textarea>
+                        <textarea placeholder="Your message"></textarea>
 
                         <input type="submit" value="submit">
                     </div>
