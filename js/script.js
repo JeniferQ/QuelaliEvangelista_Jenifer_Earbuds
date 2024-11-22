@@ -86,10 +86,83 @@
   const divisor = document.querySelector(".xray");
   const slider = document.querySelector(".inputRange")
 
-function moveDivisor() {
+  function moveDivisor() {
     console.log(slider.value);
     divisor.style.width = `${slider.value}px`;
-}
+  }
 
   slider.addEventListener("input", moveDivisor);
+})();
+
+(() => {
+  const prevColour = document.querySelector("#colours .left"),
+  nextColour = document.querySelector("#colours .right"),
+  prevTestimonial = document.querySelector("#testimonials .left"),
+  nextTestimonial = document.querySelector("#testimonials .right"),
+  colourCards = document.querySelectorAll(".colour-card"),
+  testimonialCards = document.querySelectorAll(".testimonial-card");
+
+  let colourIndex = 0;
+  let testimonialIndex = 0;
+
+  function moveCards(cards, index) {
+    const newTranslateX = -index * 100 + '%';
+    cards.forEach(card => {
+      card.style.transform = 'translateX(' + newTranslateX + ')';
+    });
+  }
+
+  function nextCard(container) {
+    if (container === "colours") {
+      colourIndex++;
+
+      if (colourIndex >= 3) {
+        colourIndex = 2;
+      }
+
+      moveCards(colourCards, colourIndex); 
+      console.log('next colour');
+    }
+
+    if (container === "testimonials") {
+      testimonialIndex++;
+
+      if (testimonialIndex >= 2) {
+        testimonialIndex = 1;
+      }
+
+      moveCards(testimonialCards, testimonialIndex);
+      console.log('next testimonial');
+    }
+  }
+
+  function prevCard(container) {
+    if (container === "colours") {
+      colourIndex--;
+
+      if (colourIndex < -1) {
+        colourIndex = -1;
+      }
+
+      moveCards(colourCards, colourIndex);
+      console.log('previous colour');
+    }
+
+    if (container === "testimonials") {
+      testimonialIndex--;
+
+      if (testimonialIndex < 0) {
+        testimonialIndex = 0;
+      }
+
+      moveCards(testimonialCards, testimonialIndex);
+      console.log('previous testimonial');
+    }
+  }
+
+  prevColour.addEventListener("click", () => prevCard("colours"));
+  nextColour.addEventListener("click", () => nextCard("colours"));
+  
+  prevTestimonial.addEventListener("click", () => prevCard("testimonials"));
+  nextTestimonial.addEventListener("click", () => nextCard("testimonials"));
 })();
