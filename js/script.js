@@ -5,7 +5,7 @@
   canvas.width = 1200;
   canvas.height = 1080;
 
-  const frameCount = 161;
+  const frameCount = 160;
   const images = [];
   const sequence = { frame: 0 };
 
@@ -36,8 +36,8 @@
   const infoBoxes = [
     { title: "Noise Cancellation", text: "Premium rubber tips with a sealed fit that cancels all background noise.", img: "images/hotspot1.jpg" },
     { title: "Fast-Charge Battery", text: "Long lasting battery that fully recharges in a single hour.", img: "images/hotspot2.jpg" },
-    { title: "Flexible Handle", text: "Malleable and ergonomic handle designed for hours of comfortable use.", img: "images/hotspot3.jpg" },
-    { title: "Rotating Handle", text: "Handles with up to 90 degree rotation that adapt to all ear shapes.", img: "images/hotspot4.jpg" }
+    { title: "Rotating Handle", text: "Handles with up to 90 degree rotation that adapt to all ear shapes.", img: "images/hotspot4.jpg" },
+    { title: "Flexible Handle", text: "Malleable and ergonomic handle designed for hours of comfortable use.", img: "images/hotspot3.jpg" }
   ];
 
   function loadInfo() {
