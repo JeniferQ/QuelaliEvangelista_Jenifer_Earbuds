@@ -1,11 +1,43 @@
 (() => {
+  const canvas = document.querySelector(".sequence");
+  const context = canvas.getContext("2d");
+
+  canvas.width = 1200;
+  canvas.height = 1080;
+
+  const frameCount = 161;
+  const images = [];
+  const sequence = { frame: 0 };
+
+  for(let i = 0; i < frameCount; i++){
+      const img = new Image();
+      img.src =`images/sequence/website${(i + 1).toString().padStart(3, '0')}.webp`;
+      images.push(img);
+  }
+
+  gsap.to(sequence, {
+      frame: 159,
+      snap: "frame",
+      scrollTrigger: { trigger: ".sequence", pin: true, scrub: 2, start: "top top" }, onUpdate: render
+  });
+  
+  images[0].addEventListener("load", render);
+
+  function render(){
+      context.clearRect(0,0, canvas.width, canvas.height);
+      console.log(images[sequence.frame]);
+      context.drawImage(images[sequence.frame], 0, 0);
+  }
+})();
+
+(() => {
   const hotspots = document.querySelectorAll(".Hotspot");
 
   const infoBoxes = [
-    { title: "Noise Cancellation", text: "Premium rubber tips with a sealed fit that cancels all background noise.", img: "images/hotspot_img-01.svg" },
-    { title: "Fast Charging Battery", text: "Long lasting battery that fully recharges in a single hour.", img: "images/hotspot_img-04.svg" },
-    { title: "Flexible Handle", text: "Malleable and ergonomic handle designed for hours of comfortable use.", img: "images/hotspot_img-03.svg" },
-    { title: "Rotating Handle", text: "Handles with up to 90 degree rotation that adapt to all ear shapes.", img: "images/hotspot_img-02.svg" }
+    { title: "Noise Cancellation", text: "Premium rubber tips with a sealed fit that cancels all background noise.", img: "images/poster.png" },
+    { title: "Fast-Charge Battery", text: "Long lasting battery that fully recharges in a single hour.", img: "images/poster.png" },
+    { title: "Flexible Handle", text: "Malleable and ergonomic handle designed for hours of comfortable use.", img: "images/poster.png" },
+    { title: "Rotating Handle", text: "Handles with up to 90 degree rotation that adapt to all ear shapes.", img: "images/poster.png" }
   ];
 
   function loadInfo() {
@@ -54,10 +86,102 @@
   const divisor = document.querySelector(".xray");
   const slider = document.querySelector(".inputRange")
 
-function moveDivisor() {
+  function moveDivisor() {
     console.log(slider.value);
     divisor.style.width = `${slider.value}px`;
-}
+  }
 
   slider.addEventListener("input", moveDivisor);
+})();
+
+(() => {
+  const prevColour = document.querySelector("#colours .left"),
+  nextColour = document.querySelector("#colours .right"),
+  prevTestimonial = document.querySelector("#testimonials .left"),
+  nextTestimonial = document.querySelector("#testimonials .right"),
+  colourCards = document.querySelectorAll(".colour-card"),
+  testimonialCards = document.querySelectorAll(".testimonial-card");
+
+  let colourIndex = 0;
+  let testimonialIndex = 0;
+
+  function resizeCards() {
+    if (window.innerWidth >= 1200) {
+      colourCards.forEach(card => {
+        card.style.transform = 'translateX(0)';
+      });
+
+      testimonialCards.forEach(card => {
+        card.style.transform = 'translateX(0)';
+      });
+    }
+  }
+
+  function moveCards(cards, index) {
+    const newTranslateX = -index * 100 + '%';
+
+    if (window.innerWidth < 1200) {
+      cards.forEach(card => {
+        card.style.transform = 'translateX(' + newTranslateX + ')';
+      });
+    }
+
+    else {
+      cards.forEach(card => {
+        card.style.transform = 'translateX(0)';
+      });
+    }
+  }
+
+  function nextCard(container) {
+    if (container === "colours") {
+      colourIndex++;
+
+      if (colourIndex >= 3) {
+        colourIndex = 2;
+      }
+
+      moveCards(colourCards, colourIndex);
+    }
+
+    if (container === "testimonials") {
+      testimonialIndex++;
+
+      if (testimonialIndex >= 2) {
+        testimonialIndex = 1;
+      }
+
+      moveCards(testimonialCards, testimonialIndex);
+    }
+  }
+
+  function prevCard(container) {
+    if (container === "colours") {
+      colourIndex--;
+
+      if (colourIndex < -1) {
+        colourIndex = -1;
+      }
+
+      moveCards(colourCards, colourIndex);
+    }
+
+    if (container === "testimonials") {
+      testimonialIndex--;
+
+      if (testimonialIndex < 0) {
+        testimonialIndex = 0;
+      }
+
+      moveCards(testimonialCards, testimonialIndex);
+    }
+  }
+
+  prevColour.addEventListener("click", () => prevCard("colours"));
+  nextColour.addEventListener("click", () => nextCard("colours"));
+  
+  prevTestimonial.addEventListener("click", () => prevCard("testimonials"));
+  nextTestimonial.addEventListener("click", () => nextCard("testimonials"));
+
+  window.addEventListener("resize", resizeCards);
 })();
