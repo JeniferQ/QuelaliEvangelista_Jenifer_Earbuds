@@ -1,5 +1,6 @@
 @use '../abstracts/variables' as v;
 
+<<<<<<< Updated upstream
 .contact-form {
     align-self: center;
     background: url(/images/space.jpg);
@@ -57,13 +58,30 @@
 //     padding: 30px;
 
 //     label {
+=======
+// .contact-form {
+//     align-self: center;
+//     background: v.$background;
+//     border: v.$border;
+//     border-radius: 20px;
+//     padding: 30px;
+
+//     .form-row1, .form-row2, .form-row3 {
+//         display: flex;
+//         flex-direction: column;
+>>>>>>> Stashed changes
 //         width: 100%;
 //     }
 
 //     input, textarea {
 //         margin: 20px 0;
+<<<<<<< Updated upstream
 //         width: 100%;
 //         border: 1px solid v.$blue;
+=======
+//         width: calc(100% - 40px);
+//         border: v.$border;
+>>>>>>> Stashed changes
 //         box-shadow: 0 0 8px v.$blue;
 //         border-radius: 15px;
 //         color: v.$blue;
@@ -81,19 +99,30 @@
 
 //     textarea {
 //         height: 100px;
+<<<<<<< Updated upstream
 //         margin-bottom: 50px;
+=======
+>>>>>>> Stashed changes
 //         resize: none;
 //     }
 
 //     input[type=submit] {
+<<<<<<< Updated upstream
 //         width: 50%;
 //         margin-left: 50%;
 //         cursor: pointer;
 //         background: v.$blue;
+=======
+//         margin: 40px 0 10px 50%;
+//         cursor: pointer;
+//         background: v.$blue;
+//         width: 50%;
+>>>>>>> Stashed changes
 //         padding: 15px;
 //         color: white;
 //     }
 
+<<<<<<< Updated upstream
     // @media (min-width: 768px) {
     //     justify-self: end;
     //     margin-left: 20px;
@@ -102,3 +131,94 @@
 
 
 // }
+=======
+//     @media (min-width: 768px) {
+//         margin-left: 20px;
+//         max-width: 450px;
+//     }
+
+//     @media (min-width: 1200px) {
+//         max-width: none;
+
+        
+//         .form-row1, .form-row2 {
+//             width: 40%;
+//         }
+//     }
+// }
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    background: v.$background;
+    border: v.$border;
+    border-radius: 20px;
+    padding: 30px;
+
+    .form-row1, .form-row2, .form-row3, .form-row4 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    label, input[type=text], textarea {
+        width: calc(100% - 40px);
+    }
+
+    input, textarea {
+        margin: 20px 0;
+        border: v.$border;
+        box-shadow: v.$box-glow;
+        border-radius: 15px;
+        color: v.$blue;
+        outline: none;
+    }
+
+    input[type=text], textarea {
+        background: v.$black;
+        padding: 20px;
+    }
+
+    input[type=text] {
+        height: 20px;
+    }
+
+    textarea {
+        height: 100px;
+        margin-bottom: 50px;
+        resize: none;
+    }
+
+    .form-row4 {
+        align-items: end;
+
+        input[type=submit] {
+            width: 50%;
+            padding: 15px;
+            cursor: pointer;
+            background: v.$blue;
+            color: v.$white;
+        }
+    }
+
+    @media (min-width: 768px) {
+        justify-self: end;
+        margin-left: 20px;
+        max-width: 420px;
+    }
+
+    @media (min-width: 1200px) {
+        justify-self: start;
+        max-width: none;
+
+        .form-row1, .form-row2 {
+            width: 48%;
+        }
+
+        .form-row2 {
+            margin-left: 20px;
+        }
+    }
+}
+>>>>>>> Stashed changes

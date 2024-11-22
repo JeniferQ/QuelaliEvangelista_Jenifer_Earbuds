@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 @use '../abstracts' as a;
 
 #header {
@@ -5,11 +6,22 @@
     top: 0;
     z-index: 2;
     background-color: a.$black;
+=======
+@use '../abstracts/variables' as v;
+
+#header {
+    position: sticky;
+    height: 100px;
+    top: 0;
+    z-index: 2;
+    background: linear-gradient(180deg, v.$black 0%, #00000000 100%);
+>>>>>>> Stashed changes
 
     .grid-con {
         align-items: center;
         padding: 5px 40px;
     }
+<<<<<<< Updated upstream
 
     // @media (min-width: 768px) {
     //     .grid-con {
@@ -22,6 +34,17 @@
 #logo img {
     width: 120px;
     filter: invert(100%);
+=======
+}
+
+.logo {
+    align-content: center;
+    
+    img {
+        margin-top: 10px;
+        width: 120px;
+    }
+>>>>>>> Stashed changes
 }
 
 #burger {
@@ -34,7 +57,11 @@
         width: 100%;
         height: 1px;
         margin-bottom: 10px;
+<<<<<<< Updated upstream
         border-bottom: 3px solid white;
+=======
+        border-bottom: 3px solid v.$white;
+>>>>>>> Stashed changes
     }
 
     @media (min-width: 768px) {
@@ -42,11 +69,18 @@
     }
 }
 
+<<<<<<< Updated upstream
 #menu {
     width: 100%;
     text-align: center;
     justify-self: center;
     display: none;
+=======
+.menu {
+    width: 100%;
+    text-align: center;
+    justify-self: center;
+>>>>>>> Stashed changes
 
     ul {
         list-style-type: none;
@@ -60,7 +94,15 @@
         color: inherit;
         text-decoration: none;
     }
+<<<<<<< Updated upstream
     
+=======
+}
+
+#top-menu {
+    display: none;
+
+>>>>>>> Stashed changes
     @media (min-width: 768px) {
         display: block;
         text-align: right;

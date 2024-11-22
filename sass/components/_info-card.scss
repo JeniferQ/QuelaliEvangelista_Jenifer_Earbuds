@@ -7,15 +7,25 @@
     z-index: 2;
     visibility: hidden;
   
+<<<<<<< Updated upstream
     background: url(/images/space.jpg);
     border: 2px solid v.$blue;
     box-shadow: 0 0 10px 2px #83b1f080;
+=======
+    background: v.$background;
+    border: v.$border;
+    box-shadow: v.$box-glow;
+>>>>>>> Stashed changes
     border-radius: 10px;
     display: block;
     
     max-width: 250px;
     min-width: 200px;
+<<<<<<< Updated upstream
     padding: 20px;
+=======
+    padding: 30px;
+>>>>>>> Stashed changes
   
     h2 {
       margin: 10px 0;
@@ -26,6 +36,11 @@
     }
     
     img {
+<<<<<<< Updated upstream
+=======
+      margin-top: 20px;
+      box-sizing: border-box;
+>>>>>>> Stashed changes
       width: 100%;
     }
   }
