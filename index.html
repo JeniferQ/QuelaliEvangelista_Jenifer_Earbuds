@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     
     <link href="css/main.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
@@ -22,7 +21,7 @@
         <div class="grid-con">
             <h2 class="hidden">Header</h2>
 
-            <div class="col-start-1 col-end-3" id="logo">
+            <div class="col-start-1 col-end-3 logo">
                 <a href="index.html"><img src="images/comet.svg" alt="Comet logo"></a>
             </div>
     
@@ -32,12 +31,12 @@
                 <div class="burger-line"></div>
             </div>
 
-            <nav class="col-span-full m-col-start-6 m-col-end-13" id="menu">
+            <nav class="col-span-full m-col-start-6 m-col-end-13 menu" id="top-menu">
                 <h3 class="hidden">Header Navigation</h3>
                 <ul>
-                    <li><a href="#">Link1</a></li>
-                    <li><a href="#">Link2</a></li>
-                    <li><a href="#">Link3</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Support</a></li>
                 </ul>
             </nav>
         </div>
@@ -54,7 +53,7 @@
             </div>
 
             <div class="col-span-full hero-bg">
-                <img src="images/sky.jpg" alt="A phone">
+                <img src="images/sky.jpg" alt="A picture of planet Earth from space">
             </div>
 
             <div class="blur"></div>
@@ -78,44 +77,44 @@
 
                 <div class="col-span-full carousel-con">
                     <div class="carousel">
-                        <button class="arrow left"><img src="images/arrow_blue.svg"></button>
+                        <button class="arrow left"><img src="images/arrow.svg" alt="Left arrow"></button>
 
                         <div class="card-wrapper" id="colour-wrapper">
                             <div class="card colour-card">
                                 <div class="img-con">
-                                    <img src="images/bud_white.png">
+                                    <img src="images/earbuds_black.png" alt="Black case of earbuds">
                                 </div>
                                 
                                 <div class="card-txt">
                                     <img src="images/halved.svg">
-                                    <h3>Moonlight</h3>
+                                    <p>Eclipse</p>
                                 </div>
                             </div>
 
                             <div class="card colour-card">
                                 <div class="img-con">
-                                    <img src="images/bud_white.png">
+                                    <img src="images/earbuds_blue.png" alt="Blue case of earbuds">
                                 </div>
                                 
                                 <div class="card-txt">
                                     <img src="images/halved.svg">
-                                    <h3>Moonlight</h3>
+                                    <p>Neptune</p>
                                 </div>
                             </div>
 
                             <div class="card colour-card">
                                 <div class="img-con">
-                                    <img src="images/bud_white.png">
+                                    <img src="images/earbuds_white.png" alt="White case of earbuds">
                                 </div>
                                 
                                 <div class="card-txt">
                                     <img src="images/halved.svg">
-                                    <h3>Moonlight</h3>
+                                    <p>Moonlight</p>
                                 </div>
                             </div>
                         </div>
             
-                        <button class="arrow right"><img src="images/arrow_blue.svg"></button>
+                        <button class="arrow right"><img src="images/arrow.svg" alt="Right-arrow"></button>
                     </div>
                 </div>
             </div>
@@ -149,7 +148,7 @@
             <h2 class="hidden">Interactive Model View</h2>
 
             <div class="grid-con">
-                <div class="m-col-start-1 m-col-end-6 side-border">
+                <div class="m-col-start-1 m-col-end-7 l-col-end-6 side-border">
                     <h2 class="title">What makes us great?</h2>
                 </div>
 
@@ -194,22 +193,22 @@
             </div>
         </div>
 
-        <section class="full-width-grid-con xray-view">
+        <section class="full-width-grid-con" id="xray-view">
             <div class="grid-con">
                 <div class="col-span-full xray-title">
-                    <img src="images/radioactive.svg">
+                    <img src="images/radioactive.svg" alt="Circle with skull symbol">
                     <h2 class="title">X-ray View</h2>
                 </div>
 
                 <div class="col-span-full border">
-                    <img src="images/buds_float.png">
+                    <img src="images/xray_mobile.png" alt="Xray view of Comet earbuds">
 
                     <div class="xray-con">
                         <div class="xray">
                         </div>
                     </div>
 
-                    <input class="inputRange" type="range" name="range" value="275" min="0" max="550" id="inputRange">
+                    <input class="inputRange" type="range" name="range" value="300" min="0" max="600" id="inputRange">
                 </div>
             </div>
         </section>
@@ -220,67 +219,106 @@
 
                 <div class="col-span-full carousel-con">
                     <div class="carousel">
-                        <button class="arrow left"><img src="images/arrow_blue.svg"></button>
+                        <button class="arrow left"><img src="images/arrow.svg" alt="Left arrow"></button>
 
                         <div class="card-wrapper" id="testimonials-wrapper">
                             <div class="col-span-full m-col-start-2 m-col-end-7 card testimonial-card">
-                                <p class="name">Juliana Bezerra</p>
+                                <p class="name">Julia Smith</p>
             
-                                <img class="rating" src="images/rating.svg">
+                                <img class="rating" src="images/rating.svg" alt="5 stars rating">
             
                                 <p class="card-title">Love it!</p>
                                 <p class="card-txt">I bought a pair of Comet earbuds two weeks ago and they rock! The battery lasts a lot, and they have been holding up well during my marathons. Great deal and a lot of quality!</p>
                             </div>
 
                             <div class="col-span-full m-col-start-2 m-col-end-7 card testimonial-card">
-                                <p class="name">Juliana Bezerra</p>
+                                <p class="name">Andrew Brown</p>
             
-                                <img class="rating" src="images/rating.svg">
+                                <img class="rating" src="images/rating.svg" alt="5 stars rating">
             
-                                <p class="card-title">Love it!</p>
-                                <p class="card-txt">I bought a pair of Comet earbuds two weeks ago and they rock! The battery lasts a lot, and they have been holding up well during my marathons. Great deal and a lot of quality!</p>
+                                <p class="card-title">I recommed this product.</p>
+                                <p class="card-txt">Got a pair over 2 years ago and they are holding up just great. Nice durability, and the battery capacity is still decent. I bought those for my whole family and they also approve it.</p>
                             </div>
                         </div>
 
-                        <button class="arrow right"><img src="images/arrow_blue.svg"></button>
+                        <button class="arrow right"><img src="images/arrow.svg" alt="Right arrow"></button>
                     </div>
                 </div>
             </div>
         </section>
 
-            <section class="full-width-grid-con" id="contact">
-                <div class="grid-con">
-                    <div class="col-span-full m-col-start-1 m-col-end-6 side-border">
-                        <h2 class="title">Send us a message</h2>
-                    </div>
-    
-                    <p class="col-span-full m-col-start-1 m-col-end-6">Interested in sending a message for us? Feel free to e-mail us on comet@info.com or fill the form in this page.</p>
-    
-                    <div class="col-span-full m-col-start-1 m-col-end-6 rocket" id="mobile-rocket">
-                        <img class="body" src="images/rocket.svg">
-                        <div class="trail"><div class="rocket-line"></div></div>
-                    </div>
-    
-                    <div class="col-span-full m-col-start-6 m-col-end-13 contact-form">
+        <section class="full-width-grid-con" id="contact">
+            <div class="grid-con">
+                <div class="col-span-full m-col-start-1 m-col-end-6 side-border">
+                    <h2 class="title">Send us a message</h2>
+                </div>
+
+                <p class="col-span-full m-col-start-1 m-col-end-6">Interested in sending a message for us? Feel free to e-mail us on comet@info.com or fill the form in this page.</p>
+
+                <div class="col-span-full m-col-start-1 m-col-end-6 rocket" id="mobile-rocket">
+                    <img class="body" src="images/rocket.svg" alt="Rocket icon">
+                    <div class="trail"><div class="rocket-line"></div></div>
+                </div>
+
+                <div class="col-span-full m-col-start-6 m-col-end-13 contact-form">
+                    <div class="form-row1">
                         <label>Name:</label>
                         <input type="text" placeholder="Your name">
-    
+                    </div>
+
+                    <div class="form-row2">
                         <label>E-mail:</label>
                         <input type="text" placeholder="Your e-mail">
-    
+                    </div>
+
+                    <div class="form-row3">
                         <label>Message:</label>
                         <textarea placeholder="Your message"></textarea>
+                    </div>
 
+                    <div class="form-row4">
                         <input type="submit" value="submit">
                     </div>
-
-                    <div class="col-span-full m-col-start-6 m-col-end-13 rocket" id="tablet-rocket">
-                        <img class="body" src="images/rocket.svg">
-                        <div class="trail"><div class="rocket-line"></div></div>
-                    </div>
                 </div>
-            </section>
 
+                <div class="col-span-full m-col-start-7 m-col-end-13 rocket" id="tablet-rocket">
+                    <img class="body" src="images/rocket.svg" alt="Rocket icon">
+                    <div class="trail"><div class="rocket-line"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="full-width-grid-con" id="footer">
+            <div class="grid-con">
+                <h2 class="hidden">Footer</h2>
+
+                <div class="col-start-1 col-end-3 m-col-start-1 m-col-end-4 logo">
+                    <a href="index.html"><img src="images/comet.svg" alt="Comet logo"></a>
+                </div>
+
+                <div class="col-start-3 col-end-5 m-col-start-9 m-col-end-13 l-col-start-5 l-col-end-9" id="social">
+                    <h3 class="hidden">Social Media Links</h3>
+
+                    <a href="#"><img src="images/twitter.svg" alt="Twitter logo"></a>
+                    <a href="#"><img src="images/instagram.svg" alt="Instagram logo"></a>
+                    <a href="#"><img src="images/facebook.svg" alt="Facebook logo"></a>
+                </div>
+
+                <nav class="col-span-full l-col-start-9 l-col-end-13 menu" id="bottom-menu">
+                    <h3 class="hidden">Footer Navigation</h3>
+
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </nav>
+
+                <p class="col-span-full" id="copyright">
+                    @2024 Comet. All rights reserved.
+                </p>
+            </div>
+        </footer>
     </main>
 
 
