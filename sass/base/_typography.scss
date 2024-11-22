@@ -9,6 +9,10 @@ body {
     text-transform: uppercase;
 }
 
+#top-menu li a {
+    font-size: 20pt;
+}
+
 .title {
     color: v.$blue;
     text-shadow: v.$text-glow;
@@ -105,6 +109,10 @@ input[type=submit] {
     }
     
     p, a {
+        font-size: 16pt;
+    }
+
+    #top-menu li a {
         font-size: 16pt;
     }
 

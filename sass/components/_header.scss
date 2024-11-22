@@ -5,16 +5,17 @@
     height: 100px;
     top: 0;
     z-index: 2;
-    background: linear-gradient(180deg, v.$black 0%, #00000000 100%);
+    background: linear-gradient(180deg, v.$black 60%, #00000090 80%, #00000000 100%);
 
     .grid-con {
         align-items: center;
-        padding: 5px 40px;
+        padding: 0 40px;
     }
 }
 
 .logo {
     align-content: center;
+    z-index: 2;
     
     img {
         margin-top: 10px;
@@ -27,6 +28,9 @@
     height: 30px;
     display: block;
     justify-self: end;
+    cursor: pointer;
+    z-index: 2;
+    transition: transform .4s ease;
 
     .burger-line {
         width: 100%;
@@ -38,6 +42,10 @@
     @media (min-width: 768px) {
         display: none;
     }
+}
+
+#burger.rotate {
+    transform: rotate(-90deg) translateY(10px) translateX(-8px);
 }
 
 .menu {
@@ -57,6 +65,12 @@
         color: inherit;
         text-decoration: none;
     }
+
+    a:hover {
+        color: v.$blue;
+        text-shadow: v.$text-glow;
+        transition: color .2s ease, text-shadow .4s ease;
+    }
 }
 
 #top-menu {
@@ -73,24 +87,26 @@
     }
 }
 
-// #menu.open {
-//     position: absolute;
-//     height: 100vh;
-//     width: 100vw;
-//     display: block;
-//     animation: appear .2s ease;
-//     z-index: 2;
+#top-menu.open {
+    position: absolute;
+    height: 100vh;
+    width: 90vw;
+    right: 0;
+    top: 0;
 
-//     ul {
-//         margin-top: 300px;
-//     }
+    background: linear-gradient(270deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%);
+    text-align: right;
+    display: block;
+    animation: appear .4s ease;
+    z-index: 1;
 
-//     li {
-//         font-weight: 600;
-//     }
-// }
+    ul {
+        margin-top: 380px;
+        margin-right: 40px;
+    }
+}
 
-// @keyframes appear {
-//     from {opacity: 0;}
-//     to {opacity: 1;}
-// }
+@keyframes appear {
+    from { transform: translateX(90vh); }
+    to { transform: translateX(0); }
+}
