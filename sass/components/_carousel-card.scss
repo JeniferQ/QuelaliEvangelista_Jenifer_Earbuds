@@ -1,11 +1,11 @@
 @use '../abstracts/variables' as v;
 
 .colour-card {
+    box-sizing: border-box;
     border: 3px dotted v.$blue;
     background-image: url(/images/space.jpg);
     border-radius: 30px;
-    padding: 20px 10px 30px 10px;
-    margin: 0 40px;
+    padding: 30px 0;
 
     @media (min-width: 768px) {
         margin: 0;
