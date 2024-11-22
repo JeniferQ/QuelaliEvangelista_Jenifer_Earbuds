@@ -105,11 +105,32 @@
   let colourIndex = 0;
   let testimonialIndex = 0;
 
+  function resizeCards() {
+    if (window.innerWidth >= 1200) {
+      colourCards.forEach(card => {
+        card.style.transform = 'translateX(0)';
+      });
+
+      testimonialCards.forEach(card => {
+        card.style.transform = 'translateX(0)';
+      });
+    }
+  }
+
   function moveCards(cards, index) {
     const newTranslateX = -index * 100 + '%';
-    cards.forEach(card => {
-      card.style.transform = 'translateX(' + newTranslateX + ')';
-    });
+
+    if (window.innerWidth < 1200) {
+      cards.forEach(card => {
+        card.style.transform = 'translateX(' + newTranslateX + ')';
+      });
+    }
+
+    else {
+      cards.forEach(card => {
+        card.style.transform = 'translateX(0)';
+      });
+    }
   }
 
   function nextCard(container) {
@@ -120,8 +141,7 @@
         colourIndex = 2;
       }
 
-      moveCards(colourCards, colourIndex); 
-      console.log('next colour');
+      moveCards(colourCards, colourIndex);
     }
 
     if (container === "testimonials") {
@@ -132,7 +152,6 @@
       }
 
       moveCards(testimonialCards, testimonialIndex);
-      console.log('next testimonial');
     }
   }
 
@@ -145,7 +164,6 @@
       }
 
       moveCards(colourCards, colourIndex);
-      console.log('previous colour');
     }
 
     if (container === "testimonials") {
@@ -156,7 +174,6 @@
       }
 
       moveCards(testimonialCards, testimonialIndex);
-      console.log('previous testimonial');
     }
   }
 
@@ -165,4 +182,6 @@
   
   prevTestimonial.addEventListener("click", () => prevCard("testimonials"));
   nextTestimonial.addEventListener("click", () => nextCard("testimonials"));
+
+  window.addEventListener("resize", resizeCards);
 })();
