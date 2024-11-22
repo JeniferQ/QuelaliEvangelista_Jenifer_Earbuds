@@ -1,5 +1,20 @@
+<<<<<<< Updated upstream
 .canvas-con {
     margin: 30px auto;
+=======
+@use '../abstracts/variables' as v;
+
+.canvas-con {
+    margin: 30px auto 0 auto;
+
+    p {
+        margin: 40px 10px 0 10px;
+
+        @media (min-width: 768px) {
+            margin: 40px 0 0 0;
+        }
+    }
+>>>>>>> Stashed changes
 }
 
 .sequence {
@@ -8,6 +23,10 @@
     width: 100%;
 
     @media (min-width: 768px) {
+<<<<<<< Updated upstream
         width: 80%;;
+=======
+        width: 80%;
+>>>>>>> Stashed changes
     }
 }

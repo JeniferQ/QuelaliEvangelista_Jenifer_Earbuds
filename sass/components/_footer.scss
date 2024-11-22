@@ -1,0 +1,50 @@
+@use '../abstracts/variables' as v;
+
+footer {
+    margin-top: 100px;
+    padding-top: 40px;
+    background: v.$background;
+    border-top: 2px solid #12073e;
+
+    #social {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: end;
+
+        a {
+            height: 50px;
+            width: 50px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    #bottom-menu ul {
+        max-width: 400px;
+        margin: 50px auto 0 auto;
+        justify-content: space-evenly;
+        display: flex;
+    }
+
+    #copyright {
+        border-top: 1px solid v.$blue;
+        padding: 40px 0 20px 0;
+        text-align: center;
+    }
+
+    @media (min-width: 1200px) {
+        #social {
+            margin-bottom: 5px;
+        }
+
+        #bottom-menu ul {
+            margin-top: 40px;
+            gap: 30px;
+            justify-content: end;
+        }
+    }
+}

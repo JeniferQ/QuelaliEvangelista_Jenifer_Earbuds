@@ -1,6 +1,9 @@
 @use '../abstracts/variables' as v;
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .carousel-con {
     overflow: hidden;
     max-width: 1200px;
@@ -10,7 +13,11 @@
         display: flex;
         align-content: center;
         justify-content: center;
+<<<<<<< Updated upstream
         gap: 15px;
+=======
+        gap: 20px;
+>>>>>>> Stashed changes
 
         .arrow {
             width: 40px;
@@ -43,7 +50,11 @@
             }
 
             .testimonial-card {
+<<<<<<< Updated upstream
                 width: calc(100% - 45px);
+=======
+                width: 100%;
+>>>>>>> Stashed changes
             }
 
             .colour-card {
@@ -52,17 +63,33 @@
 
             @media (min-width: 768px) {
                 .colour-card {
+<<<<<<< Updated upstream
                     width: calc(50% - 10px);
+=======
+                    width: calc(50% - 20px);
+                }
+
+                .testimonial-card {
+                    width: 100%;
+>>>>>>> Stashed changes
                 }
             }
 
             @media (min-width: 1200px) {
                 .colour-card {
+<<<<<<< Updated upstream
                     width: calc(33.33% - 10px);
                 }
                 
                 .testimonial-card {
                     width: calc(50% - 55px);
+=======
+                    width: calc(33.33% - 20px);
+                }
+                
+                .testimonial-card {
+                    width: calc(50% - 40px);
+>>>>>>> Stashed changes
                 }
             }
         }
@@ -70,7 +97,11 @@
         @media (min-width: 768px) {
             #colour-wrapper {
                 max-width: none;
+<<<<<<< Updated upstream
                 gap: 10px;
+=======
+                gap: 20px;
+>>>>>>> Stashed changes
             }
 
             #testimonials-wrapper {
@@ -79,12 +110,24 @@
         }
 
         @media (min-width: 1200px) {
+<<<<<<< Updated upstream
             #testimonials-wrapper {
                 max-width: none;
                 gap: 10px;
             }
         }
 
+=======
+            .card-wrapper {
+                justify-content: center;
+            }
+
+            #testimonials-wrapper {
+                gap: 20px;
+                max-width: none;
+            }
+        }
+>>>>>>> Stashed changes
     }
 }
 
