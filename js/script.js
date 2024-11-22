@@ -1,3 +1,39 @@
+
+(() => {
+  const burger = document.querySelector('#burger'),
+  menu = document.querySelector("#top-menu");
+
+  function removeMenu() {
+    menu.classList.remove('open');
+    burger.classList.remove('rotate');
+  }
+    
+  function toggleMenu() {
+    if (window.innerWidth <= 768) {
+        menu.classList.toggle('open');
+        burger.classList.toggle('rotate');
+    
+        if (menu.classList.contains('open')) {
+            console.log('open mobile menu');
+        }
+
+        else {
+            console.log('close mobile menu');
+            removeMenu(); }
+    }
+  }
+
+  function resizeMenu() {
+    if (window.innerWidth >= 768) {
+        removeMenu();
+    }
+  }
+
+  burger.addEventListener('click', toggleMenu);
+  window.addEventListener('resize', resizeMenu);
+
+})();
+
 (() => {
   const canvas = document.querySelector(".sequence");
   const context = canvas.getContext("2d");
@@ -184,4 +220,7 @@
   nextTestimonial.addEventListener("click", () => nextCard("testimonials"));
 
   window.addEventListener("resize", resizeCards);
+
 })();
+
+console.log('JS is working');
