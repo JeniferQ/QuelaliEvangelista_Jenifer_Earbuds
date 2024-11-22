@@ -34,10 +34,10 @@
   const hotspots = document.querySelectorAll(".Hotspot");
 
   const infoBoxes = [
-    { title: "Noise Cancellation", text: "Premium rubber tips with a sealed fit that cancels all background noise.", img: "images/poster.png" },
-    { title: "Fast-Charge Battery", text: "Long lasting battery that fully recharges in a single hour.", img: "images/poster.png" },
-    { title: "Flexible Handle", text: "Malleable and ergonomic handle designed for hours of comfortable use.", img: "images/poster.png" },
-    { title: "Rotating Handle", text: "Handles with up to 90 degree rotation that adapt to all ear shapes.", img: "images/poster.png" }
+    { title: "Noise Cancellation", text: "Premium rubber tips with a sealed fit that cancels all background noise.", img: "images/hotspot1.jpg" },
+    { title: "Fast-Charge Battery", text: "Long lasting battery that fully recharges in a single hour.", img: "images/hotspot2.jpg" },
+    { title: "Flexible Handle", text: "Malleable and ergonomic handle designed for hours of comfortable use.", img: "images/hotspot3.jpg" },
+    { title: "Rotating Handle", text: "Handles with up to 90 degree rotation that adapt to all ear shapes.", img: "images/hotspot4.jpg" }
   ];
 
   function loadInfo() {
