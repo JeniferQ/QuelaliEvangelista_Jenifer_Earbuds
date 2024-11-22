@@ -1,64 +1,5 @@
 @use '../abstracts/variables' as v;
 
-<<<<<<< Updated upstream
-.contact-form {
-    align-self: center;
-    background: url(/images/space.jpg);
-    border: 3px dashed v.$blue;
-    border-radius: 20px;
-    padding: 30px;
-
-    input, textarea {
-        margin: 20px 0;
-        border: 1px solid v.$blue;
-        box-shadow: 0 0 8px v.$blue;
-        border-radius: 15px;
-        color: v.$blue;
-        outline: none;
-    }
-
-    input[type=text], textarea {
-        background: v.$black;
-        padding: 20px;
-        width: calc(100% - 40px);
-    }
-
-    input[type=text] {
-        height: 20px;
-    }
-
-    textarea {
-        height: 100px;
-        resize: none;
-    }
-
-    input[type=submit] {
-        margin: 40px 0 10px 50%;
-        cursor: pointer;
-        background: v.$blue;
-        width: 50%;
-        padding: 15px;
-        color: white;
-    }
-
-    @media (min-width: 768px) {
-        justify-self: end;
-        margin-left: 20px;
-        max-width: 400px;
-    }
-}
-
-// .contact-form {
-//     display: flex;
-//     flex-wrap: wrap;
-//     align-self: center;
-//     background: url(/images/space.jpg);
-//     border: 3px dashed v.$blue;
-//     border-radius: 20px;
-//     padding: 30px;
-
-//     label {
-=======
 // .contact-form {
 //     align-self: center;
 //     background: v.$background;
@@ -69,19 +10,13 @@
 //     .form-row1, .form-row2, .form-row3 {
 //         display: flex;
 //         flex-direction: column;
->>>>>>> Stashed changes
 //         width: 100%;
 //     }
 
 //     input, textarea {
 //         margin: 20px 0;
-<<<<<<< Updated upstream
-//         width: 100%;
-//         border: 1px solid v.$blue;
-=======
 //         width: calc(100% - 40px);
 //         border: v.$border;
->>>>>>> Stashed changes
 //         box-shadow: 0 0 8px v.$blue;
 //         border-radius: 15px;
 //         color: v.$blue;
@@ -99,39 +34,18 @@
 
 //     textarea {
 //         height: 100px;
-<<<<<<< Updated upstream
-//         margin-bottom: 50px;
-=======
->>>>>>> Stashed changes
 //         resize: none;
 //     }
 
 //     input[type=submit] {
-<<<<<<< Updated upstream
-//         width: 50%;
-//         margin-left: 50%;
-//         cursor: pointer;
-//         background: v.$blue;
-=======
 //         margin: 40px 0 10px 50%;
 //         cursor: pointer;
 //         background: v.$blue;
 //         width: 50%;
->>>>>>> Stashed changes
 //         padding: 15px;
 //         color: white;
 //     }
 
-<<<<<<< Updated upstream
-    // @media (min-width: 768px) {
-    //     justify-self: end;
-    //     margin-left: 20px;
-    //     max-width: 380px;
-    // }
-
-
-// }
-=======
 //     @media (min-width: 768px) {
 //         margin-left: 20px;
 //         max-width: 450px;
@@ -221,4 +135,3 @@
         }
     }
 }
->>>>>>> Stashed changes

@@ -6,97 +6,55 @@
     margin-bottom: 50px;
 
     img {
-<<<<<<< Updated upstream
-=======
         border: v.$border;
         box-shadow: v.$box-glow;
         border-radius: 50%;
->>>>>>> Stashed changes
         width: 40px;
     }
 
     h2 {
-<<<<<<< Updated upstream
-        margin-left: 20px;
-=======
         margin-left: 15px;
->>>>>>> Stashed changes
         text-align: center;
     }
 }
 
 .border {
     width: 80%;
-<<<<<<< Updated upstream
-    outline: 3px dashed v.$blue;
-    border: 10px solid #001c5eb5;
-=======
     outline: v.$border;
     box-shadow: v.$box-glow;
     border: 10px solid #160c5bb5;
->>>>>>> Stashed changes
     padding: 0 30px;
     border-radius: 20px;
     justify-self: center;
     position: relative;
-<<<<<<< Updated upstream
-    background-image: linear-gradient(#5b9cf130 1px, transparent 1px), linear-gradient(to right, #5b9cf130 1px, transparent 1px);
-=======
     background-image: linear-gradient(#5b68f130 1px, transparent 1px), linear-gradient(to right, #5b68f130 1px, transparent 1px);
->>>>>>> Stashed changes
 	background-size: 10px 10px;
     margin-bottom: 40px;
 
     img {
         width: 100%;
-<<<<<<< Updated upstream
-=======
         animation: float 5s ease infinite;
->>>>>>> Stashed changes
     }
 }
 
 .xray-con {
     display: none;
-<<<<<<< Updated upstream
-    width: 550px;
-    height: 700px;
-    background: url(/images/buds_float.png) no-repeat;
-=======
     width: 600px;
     height: 580px;
     background: url(/images/xray_solid.png) no-repeat;
->>>>>>> Stashed changes
     margin: 0 auto;
 }
 
 .xray {
-<<<<<<< Updated upstream
-    width: 275px;
-    height: 700px;
-    background: url(/images/buds_xray.png) no-repeat;
-=======
     width: 300px;
     height: 580px;
     background: url(/images/xray_transparent.png) no-repeat;
->>>>>>> Stashed changes
     position: absolute;
 }
 
 .inputRange {
     display: none;
     height: 4px;
-<<<<<<< Updated upstream
-    width: 550px;
-    margin: 20px auto 40px auto;
-    appearance: none;
-    border-radius: 10px;
-    background: v.$blue;
-    cursor: pointer;
-}
-
-@media (min-width: 768px) {
-=======
     width: 600px;
     margin: 20px auto 40px auto;
     appearance: none;
@@ -106,7 +64,6 @@
 }
 
 @media (min-width: 800px) {
->>>>>>> Stashed changes
     .border img {
         display: none;
     }
