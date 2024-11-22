@@ -1,4 +1,3 @@
-
 @use '../abstracts/variables' as v;
 
 .canvas {
@@ -24,104 +23,74 @@
     }
 }
 
-.arrows {
-    position: absolute;
+#testimonials {
+    position: relative;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+#contact {
+    p {
+        margin-top: 40px;
+    }
+}
+
+.rocket {
     width: 100%;
-    bottom: 40%;
     display: flex;
-    justify-content: space-between;
-    z-index: 1;
-
-    button {
-        margin: 0 30px;
-        width: fit-content;
-        background-color: transparent;
-        border: none;
-
-        img {
-            width: 30px;
-            cursor: pointer;
-        }
-    }
-
-    .right {
-        transform: rotate(180deg);
-    }
-}
-
-#mobile-view {
-    .mobile-model {
-        margin-top: 30px;
-        width: 100%;
-    }
-}
-
-.hotspot-mobile {
-    display: flex;
-    flex-wrap: wrap;
+    margin: 40px auto;
     gap: 20px;
-    padding-bottom: 80px;
-    max-width: 450px;
-    justify-self: center;
+    justify-content: center;
 
-    .shape {
-        width: 100px;
-        flex-shrink: 0;
+    .body {
+        height: 100px;
+        width: 120px;
+    }
+
+    .trail {
+        overflow: hidden;
+        width: 130px;
+        height: 100px;
         position: relative;
 
-        .hexagon {
-            width: 100px;
-            height: 100px;
-            background: url(/images/hexagon.svg) center no-repeat;
-            text-align: center;
-            align-content: center;
-            color: v.$blue;
+        .rocket-line {
+            position: absolute;
+            top: 50%;
+            width: 130px;
+            height: 4px;
+            background: linear-gradient(90deg, v.$blue 40px, v.$blue 20px, transparent 20px, transparent 0px);
+            animation: move 1s linear infinite;
+        }
         
-            p {
-                font-size: 28pt;
-                padding-top: 5px;
-            }
-        }
-
-        .side-line {
-            border-left: 3px dashed v.$blue;
-            width: 3px;
-            height: 100%;
-            margin: 0 auto;
-        }
-    }
-
-    .info {
-        flex: 1;
-
-        h3 {
-            font-size: 24pt;
-            margin: 10px 0 30px 0;
-        }
-
-        p {
-            margin-bottom: 20px;
-        }
-
-        img {
-            background-color: gray;
-            width: 100%;
+        @keyframes move {
+            from { background-position: 0 0; }
+            to { background-position: 260px 0; }
         }
     }
 }
 
-.hotspot-mobile:last-of-type {
-    .side-line {
-        border: none;
-    }
+#mobile-rocket {
+    align-items: start;
+}
+
+#tablet-rocket {
+    display: none;
 }
 
 @media (min-width: 768px) {
-    #model {
-        display: block;
+    #mobile-rocket {
+        justify-content: end;
     }
-
-    #mobile-view {
-        display: none;
+    
+    #tablet-rocket {
+        transform: rotate(180deg);
+        grid-row: 1/3;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin: 0;
     }
 }

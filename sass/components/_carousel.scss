@@ -1,0 +1,165 @@
+@use '../abstracts/variables' as v;
+
+
+.carousel-con {
+    overflow: hidden;
+    max-width: 1200px;
+    position: relative;
+
+    .carousel {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        gap: 15px;
+
+        .arrow {
+            width: 40px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+    
+            img {
+                width: 100%;
+            }
+
+            @media (min-width: 1200px) {
+                display: none;
+            }
+        }
+        
+        .right {
+            transform: rotate(180deg);
+        }
+
+        .card-wrapper {
+            width: 100%;
+            flex: 1;
+            overflow: hidden;
+            display: flex;
+
+            .card {
+                flex-shrink: 0;
+                transition: 1s transform ease;
+            }
+
+            .testimonial-card {
+                width: calc(100% - 45px);
+            }
+
+            .colour-card {
+                width: 100%;
+            }
+
+            @media (min-width: 768px) {
+                .colour-card {
+                    width: calc(50% - 10px);
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .colour-card {
+                    width: calc(33.33% - 10px);
+                }
+                
+                .testimonial-card {
+                    width: calc(50% - 55px);
+                }
+            }
+        }
+
+        @media (min-width: 768px) {
+            #colour-wrapper {
+                max-width: none;
+                gap: 10px;
+            }
+
+            #testimonials-wrapper {
+                max-width: 800px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            #testimonials-wrapper {
+                max-width: none;
+                gap: 10px;
+            }
+        }
+
+    }
+}
+
+
+// .carousel-con {
+//     overflow: hidden;
+//     max-width: 1200px;
+//     position: relative;
+
+//     .carousel {
+//         display: flex;
+//         align-content: center;
+//         justify-content: center;
+//         gap: 20px;
+
+//         .arrow {
+//             width: 40px;
+//             border: none;
+//             background-color: transparent;
+    
+//             img {
+//                 width: 100%;
+//             }
+
+//             @media (min-width: 1200px) {
+//                 display: none;
+//             }
+//         }
+        
+//         .right {
+//             transform: rotate(180deg);
+//         }
+
+//         .card-wrapper {
+//             width: 100%;
+//             flex: 1;
+//             overflow: hidden;
+//             display: flex;
+
+//             .card {
+//                 flex-shrink: 0;
+//                 transition: 1s transform ease;
+//                 transform: translateX(0%);
+//             }
+
+//             .testimonial-card {
+//                 width: calc(100% - 65px);
+//             }
+
+//             .colour-card {
+//                 width: 100%;
+//             }
+
+//             @media (min-width: 768px) {
+//                 max-width: none;
+//                 gap: 10px;
+
+//                 .colour-card {
+//                     width: calc(50% - 10px);
+//                 }
+
+//                 .testimonial-card {
+//                     width: calc(50% - 75px);
+//                 }
+//             }
+
+//             @media (min-width: 1200px) {
+//                 .colour-card {
+//                     width: calc(33.33% - 10px);
+//                 }
+
+//                 .testimonial-card {
+//                     width: calc(33.33% - 75px);
+//                 }
+//             }
+//         }
+//     }
+// }
