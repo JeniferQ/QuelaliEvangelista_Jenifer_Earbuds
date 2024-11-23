@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="full-width-grid-con" id="header">
+    <header class="full-width-grid-con fade-container" id="header">
         <h1 class="hidden">Comet Earbuds Website</h1>
 
         <div class="grid-con">
@@ -43,7 +43,7 @@
     </header>
 
     <main>
-        <section class="full-width-grid-con" id="hero">
+        <section class="full-width-grid-con slide-up-container" id="hero">
             <div class="grid-con">
                 <div class="col-span-full m-col-start-2 m-col-end-7 side-border">
                     <h2 class="title">Experience audio beyond this world</h2>
@@ -66,12 +66,12 @@
                 <div class="col-span-full canvas-con">
                     <canvas class="sequence"></canvas>
 
-                    <p>Designed to deliver an audio experience unlike any other, our earbuds combine next-level noise cancellation and immersive spatial audio that will unlock an universe of possibilities. Dive into the future of sound technology today with Comet.</p>
+                    <p class="slide-up-container">Designed to deliver an audio experience unlike any other, our earbuds combine next-level noise cancellation and immersive spatial audio that will unlock an universe of possibilities. Dive into the future of sound technology today with Comet.</p>
                 </div>
             </div>
         </section>
 
-        <section class="full-width-grid-con colour-viewer" id="colours">
+        <section class="full-width-grid-con colour-viewer slide-up-container" id="colours">
             <div class="grid-con">
                 <h2 class="col-span-full title">Explore our colours</h2>
 
@@ -79,7 +79,7 @@
                     <div class="carousel">
                         <button class="arrow left"><img src="images/arrow.svg" alt="Left arrow"></button>
 
-                        <div class="card-wrapper" id="colour-wrapper">
+                        <div class="card-wrapper fade-container" id="colour-wrapper">
                             <div class="card colour-card">
                                 <div class="img-con">
                                     <img src="images/earbuds_black.png" alt="Black case of earbuds">
@@ -120,7 +120,7 @@
             </div>
         </section>
 
-        <div class="full-width-grid-con" id="mobile-view">
+        <div class="full-width-grid-con slide-up-container" id="mobile-view">
             <h2 class="hidden">Model Picture View</h2>
     
             <div class="grid-con">
@@ -130,21 +130,21 @@
     
                 <img class="col-span-full mobile-model" src="images/poster_mobile.png" alt="A single earbud">
     
-                <div class="hotspot-mobile col-span-full" id="mobile-card-1">
+                <div class="hotspot-mobile fade-container col-span-full" id="mobile-card-1">
                 </div>
     
-                <div class="hotspot-mobile col-span-full" id="mobile-card-2">
+                <div class="hotspot-mobile fade-container col-span-full" id="mobile-card-2">
                 </div>
     
-                <div class="hotspot-mobile col-span-full" id="mobile-card-3">
+                <div class="hotspot-mobile fade-container col-span-full" id="mobile-card-3">
                 </div>
     
-                <div class="hotspot-mobile col-span-full" id="mobile-card-4">
+                <div class="hotspot-mobile fade-container col-span-full" id="mobile-card-4">
                 </div>
             </div>
         </div>
 
-        <div class="full-width-grid-con" id="model-view">
+        <div class="full-width-grid-con slide-up-container" id="model-view">
             <h2 class="hidden">Interactive Model View</h2>
 
             <div class="grid-con">
@@ -152,7 +152,7 @@
                     <h2 class="title">What makes us great?</h2>
                 </div>
 
-                <div class="col-span-full" id="model">
+                <div class="col-span-full fade-container" id="model">
                     <model-viewer src="model/earbud.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="agx" poster="images/poster.png" shadow-intensity="0" environment-image="model/autumn_field_puresky_2k_original.hdr" exposure="2" shadow-softness="0" camera-orbit="-59.2deg 77.6deg 3.027m" field-of-view="35.69deg">
                         <button class="Hotspot" slot="hotspot-1" data-position="-0.47621569826974885m 0.43801890267276433m 0.17325000345616554m" data-normal="-0.20960089211135427m 0.8159851237874043m 0.5387353188568383m" data-visibility-attribute="visible">
                             <div class="HotspotAnnotation" id="hotspot-1">
@@ -164,7 +164,7 @@
                             </div>
                         </button>
                         
-                        <button class="Hotspot" slot="hotspot-3" data-position="-0.191556160851996m 0.2000806362324385m 0.16006356078679485m" data-normal="-0.39039875377540745m 0.7829167117940355m -0.48438645258122554m" data-normal="-0.38047848157784203m 0.9240619251042571m -0.03668356074366943m" data-visibility-attribute="visible">
+                        <button class="Hotspot" slot="hotspot-3" data-position="-0.191556160851996m 0.2000806362324385m 0.16006356078679485m" data-normal="-0.39039875377540745m 0.7829167117940355m -0.48438645258122554m" data-visibility-attribute="visible">
                             <div class="HotspotAnnotation" id="hotspot-3">
                             </div>
                         </button>
@@ -193,7 +193,7 @@
             </div>
         </div>
 
-        <section class="full-width-grid-con" id="xray-view">
+        <section class="full-width-grid-con slide-up-container" id="xray-view">
             <div class="grid-con">
                 <div class="col-span-full xray-title">
                     <img src="images/radioactive.svg" alt="Circle with skull symbol">
@@ -201,9 +201,9 @@
                 </div>
 
                 <div class="col-span-full border">
-                    <img src="images/xray_mobile.png" alt="Xray view of Comet earbuds">
+                    <img class="fade-container" src="images/xray_mobile.png" alt="Xray view of Comet earbuds">
 
-                    <div class="xray-con">
+                    <div class="xray-con fade-container">
                         <div class="xray">
                         </div>
                     </div>
@@ -213,7 +213,7 @@
             </div>
         </section>
 
-        <section class="full-width-grid-con" id="testimonials">
+        <section class="full-width-grid-con slide-up-container" id="testimonials">
             <div class="grid-con">
                 <h2 class="col-span-full title">Customer Reviews</h2>
 
@@ -221,7 +221,7 @@
                     <div class="carousel">
                         <button class="arrow left"><img src="images/arrow.svg" alt="Left arrow"></button>
 
-                        <div class="card-wrapper" id="testimonials-wrapper">
+                        <div class="card-wrapper fade-container" id="testimonials-wrapper">
                             <div class="col-span-full m-col-start-2 m-col-end-7 card testimonial-card">
                                 <p class="name">Julia Smith</p>
             
@@ -247,7 +247,7 @@
             </div>
         </section>
 
-        <section class="full-width-grid-con" id="contact">
+        <section class="full-width-grid-con slide-up-container" id="contact">
             <div class="grid-con">
                 <div class="col-span-full m-col-start-1 m-col-end-6 side-border">
                     <h2 class="title">Send us a message</h2>
@@ -255,12 +255,12 @@
 
                 <p class="col-span-full m-col-start-1 m-col-end-6">Interested in sending a message for us? Feel free to e-mail us on comet@info.com or fill the form in this page.</p>
 
-                <div class="col-span-full m-col-start-1 m-col-end-6 rocket" id="mobile-rocket">
+                <div class="col-span-full m-col-start-1 m-col-end-6 fade-container rocket" id="mobile-rocket">
                     <img class="body" src="images/rocket.svg" alt="Rocket icon">
                     <div class="trail"><div class="rocket-line"></div></div>
                 </div>
 
-                <div class="col-span-full m-col-start-6 m-col-end-13 contact-form">
+                <div class="col-span-full m-col-start-6 m-col-end-13 fade-container contact-form">
                     <div class="form-row1">
                         <label>Name:</label>
                         <input type="text" placeholder="Your name">
@@ -281,7 +281,7 @@
                     </div>
                 </div>
 
-                <div class="col-span-full m-col-start-7 m-col-end-13 rocket" id="tablet-rocket">
+                <div class="col-span-full m-col-start-7 m-col-end-13 fade-container rocket" id="tablet-rocket">
                     <img class="body" src="images/rocket.svg" alt="Rocket icon">
                     <div class="trail"><div class="rocket-line"></div></div>
                 </div>
