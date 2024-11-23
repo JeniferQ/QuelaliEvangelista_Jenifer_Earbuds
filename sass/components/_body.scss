@@ -12,8 +12,10 @@ body {
 .side-border {
     padding-left: 30px;
     border-left: 3px solid v.$blue;
+    overflow: hidden;
     height: fit-content;
 }
+
 
 .hidden {
     display: none;
