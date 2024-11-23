@@ -1,6 +1,6 @@
 # Earbuds
 
-**Objective:** The goal of this project is to create a single-page website for the Comet brand. The website features information about Comet earbuds and includes an interactive section with a model of the earbuds.
+**Objective:** The goal of this project is to create a single-page website for the Comet brand. The website features information about Comet earbuds, an interactive model section and an x-ray view section.
 
 ![Website Photo](images/picture.png)
 
