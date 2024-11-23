@@ -1,3 +1,31 @@
+(() => {
+  const slideContainer = document.querySelectorAll('.slide-up-container'),
+  fadeContainer = document.querySelectorAll('.fade-container'),
+  slideText = document.querySelectorAll('.side-border h2');
+
+  slideText.forEach(container => {
+    gsap.fromTo(container, {x: '-110%'},
+        {x: 0, duration: .5, delay: 1, ease: 'power4.out',
+            scrollTrigger: {trigger: container, start: 'center center'}
+        });
+  });
+
+  fadeContainer.forEach(container => {
+    gsap.fromTo(container, {opacity: 0},
+        {opacity: 1, duration: 1, delay: 1, ease: 'power2.out',
+            scrollTrigger: {trigger: container, start: 'top center'}
+        });
+  });
+  
+  slideContainer.forEach(container => {
+    gsap.fromTo(container, {opacity: 0, y: 60},
+        {opacity: 1, y: 0, duration: 1, ease: 'power3.out',
+            scrollTrigger: {trigger: container, start: 'top center'}
+        });
+  });
+
+})();
+
 
 (() => {
   const burger = document.querySelector('#burger'),
